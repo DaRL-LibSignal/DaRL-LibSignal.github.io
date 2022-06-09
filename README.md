@@ -1,4 +1,4 @@
-# pieceofshit
+# LibSignal
 
 > A Vue.js project
 
