@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>LibSignal</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+   <header id="header" class="row">   
+
+   		<div class="header-logo">
+	        <a href="index.html">LibSignal Project</a>
+	    </div>
+
+	   	<nav id="header-nav-wrap">
+			<ul class="header-main-nav">
+				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+				<li><a class="smoothscroll"  href="#features" title="pricing">Features</a></li>
+				<li><a class="smoothscroll"  href="#download" title="testimonials">Get Started</a></li>
+				<li><a href="https://darl-libsignal.github.io/LibSignalDoc/index.html" title="download" target="_blank">Docs</a></li>
+			</ul>
+
+            <a href="https://github.com/DaRL-LibSignal/LibSignal" title="sign-up" class="button button-primary cta">GitHub</a>
+		</nav>
+
+		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+   	
+   </header> <!-- /header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" data-parallax="scroll" data-image-src="images/car-trail.png" data-natural-width=3000 data-natural-height=2000>
+
+        <div class="overlay"></div>
+        <div class="home-content">        
+
+            <div class="row contents">                     
+                <div class="home-content-left">
+
+                    <h3 data-aos="fade-up">Welcome to</h3>
+
+                    <h1 data-aos="fade-up">
+                        LibSignal
+                    </h1>
+                    <h3 data-aos="fade-up">
+                        An Open Environment For <br>Traffic Signal Control.
+                    </h3>
+
+                    <div class="buttons" data-aos="fade-up">
+                        <a href="#about" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Learn More
+                        </a>
+                        <a href="#download" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Get Started
+                        </a>
+                    </div>                                         
+
+                </div>
+
+                <div class="home-image-right">
+                    <img src="images/combined-470.jpg"
+                        srcset="images/combined-470.jpg 1x, images/combined-940.jpg 2x"
+                        data-aos="fade-up">
+                </div>
+            </div>
+
+        </div> <!-- end home-content -->
+
+<!--        <ul class="home-social-list">-->
+<!--            <li>-->
+<!--                <a href="#"><i class="fa fa-facebook-square"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#"><i class="fa fa-instagram"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#"><i class="fa fa-youtube-play"></i></a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        &lt;!&ndash; end home-social-list &ndash;&gt;-->
+
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Scroll Down</span>
+                <i class="icon-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section> <!-- end home -->  
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+
+        <div class="row about-intro">
+
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">About LibSignal</h1>
+            </div>
+            <div class="col-eight">
+                <p class="lead" data-aos="fade-up">
+                    LibSignal is a library for cross-simulator comparison of reinforcement learning models in traffic signal control tasks. This library is developed to implement recent state-of-the-art reinforcement learning models with extensible interfaces and unified cross-simulator evaluation metrics.
+
+                </p>
+
+            </div>
+
+            <div class="row about-bottom-image">
+
+                <img src="images/overview.9d26362.png"
+                     srcset="images/overview.9d26362.png"
+                     sizes="(max-width: 2800px) 100vw, 2800px"
+                     alt="App Screenshots" data-aos="fade-up">
+
+            </div>
+            
+        </div>
+
+
+        <div class="row about-how" id="features">
+
+            <h1 class="intro-header" data-aos="fade-up">Features</h1>
+        </div>
+
+        <div class="row about-features">
+
+            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+                <div class="bgrid feature" data-aos="fade-up">	
+
+                    <span class="icon"><i class="icon-window"></i></span>            
+
+                    <div class="service-content">	
+
+                        <h3>Cross simulator</h3>
+
+                        <p>
+                            LibSignal provides transformations across different simulators, including SUMO, CityFlow and CBEngine, enabling comparisons between different algorithms originally conducted in different simulators.
+                        </p>
+                        
+                    </div> 	         	 
+
+                    </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">	
+
+                        <span class="icon"><i class="icon-image"></i></span>                          
+
+                    <div class="service-content">	
+                        <h3>Unified Interface</h3>
+
+                        <p>LibSignal provides unified interfaces to process and retrieve common information from different simulators for state, reward and evaluation metrics.
+                        </p>
+
+                        
+                    </div>	                          
+
+                </div> <!-- /bgrid -->
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-paint-brush"></i></span>
+
+                    <div class="service-content">
+                        <h3>Comprehensive Models</h3>
+
+                        <p>LibSignal implements three baseline controllers and seven RL-based controllers to form a comprehensive model warehouse. Meanwhile, LibSignal collects 9 commonly used datasets.</p>
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-sliders"></i></span>
+
+                    <div class="service-content">
+                        <h3>Easy To Customize</h3>
+
+                        <p>LibSignal enables a modular design of different components, allowing users to flexibly insert customized components into the library. </p>
+                    </div>
+
+                </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">
+
+                        <span class="icon"><i class="icon-file"></i></span>	              
+
+                    <div class="service-content">
+                        <h3>Up-to-date Literature</h3>
+
+                        <p>LigSignal maintains RL-based traffic signal control papers published in the recent years
+                            on top conferences and journals and their workshop papers. We will continue to update the collection.</p>
+                        
+                    </div>                
+
+                    </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-gift"></i></span>	   	           
+
+                    <div class="service-content">
+                        <h3>Extensible</h3>
+
+                        <p>LibSignal has an OpenAI Gym interface which allows easy deployment of standard RL algorithms and supports existing RL frameworks and different simulators. </p>
+                            
+                    </div>	               
+
+                </div> <!-- /bgrid -->
+
+            </div> <!-- end features-list -->
+
+        </div> <!-- end about-features -->
+
+<!--        <div class="row about-how">-->
+<!--          -->
+<!--            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>           -->
+
+<!--            <div class="about-how-content" data-aos="fade-up">-->
+<!--                <div class="about-how-steps block-1-2 block-tab-full group">-->
+
+<!--                    <div class="bgrid step" data-item="1">-->
+<!--                        <h3>Sign-Up</h3>-->
+<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
+<!--                        </p> -->
+<!--                    </div>-->
+
+<!--                    <div class="bgrid step" data-item="2">-->
+<!--                        <h3>Upload</h3>-->
+<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
+<!--                        </p> -->
+<!--                    </div>               -->
+<!--               -->
+<!--                    <div class="bgrid step" data-item="3">-->
+<!--                        <h3>Create</h3>-->
+<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
+<!--                        </p> -->
+<!--                    </div>-->
+
+<!--                    <div class="bgrid step" data-item="4">-->
+<!--                        <h3>Publish</h3>-->
+<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
+<!--                        </p> -->
+<!--                    </div>  -->
+
+<!--                </div>           -->
+<!--           </div> &lt;!&ndash; end about-how-content &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end about-how &ndash;&gt;-->
+
+<!--        <div class="row about-bottom-image">-->
+
+<!--           <img src="images/app-screens-1200.png"-->
+<!--                srcset="images/app-screens-600.png 600w,-->
+<!--                        images/app-screens-1200.png 1200w,-->
+<!--                        images/app-screens-2800.png 2800w"-->
+<!--                sizes="(max-width: 2800px) 100vw, 2800px"-->
+<!--                alt="App Screenshots" data-aos="fade-up">-->
+
+<!--        </div>  &lt;!&ndash; end about-bottom-image &ndash;&gt;-->
+
+
+        
+    </section> <!-- end about -->  
+   
+
+<!--    &lt;!&ndash; pricing-->
+<!--    ================================================== &ndash;&gt;-->
+<!--    <section id="pricing">-->
+<!--        <div class="row pricing-content">-->
+
+<!--            <div class="col-four pricing-intro">-->
+<!--                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>-->
+
+<!--                <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. -->
+<!--                </p>-->
+<!--            </div>-->
+
+<!--            <div class="col-eight pricing-table">-->
+<!--                <div class="row">-->
+
+<!--                    <div class="col-six plan-wrap">-->
+<!--                        <div class="plan-block" data-aos="fade-up"> -->
+
+<!--                            <div class="plan-top-part">-->
+<!--                                <h3 class="plan-block-title">Lite Plan</h3>-->
+<!--                                <p class="plan-block-price"><sup>$</sup>25</p>-->
+<!--                                <p class="plan-block-per">Per Month</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="plan-bottom-part">-->
+<!--                                <ul class="plan-block-features">-->
+<!--                                    <li><span>3GB</span> Storage</li>-->
+<!--                                    <li><span>10GB</span> Bandwidth</li>	                  -->
+<!--                                    <li><span>5</span> Databases</li>		                  -->
+<!--                                    <li><span>30</span> Email Accounts</li>-->
+<!--                                </ul>-->
+
+<!--                                <a class="button button-primary large" href="">Get Started</a>-->
+<!--                            </div>  -->
+<!--                     -->
+<!--                        </div>-->
+<!--                    </div> &lt;!&ndash; end plan-wrap &ndash;&gt;-->
+
+<!--                    <div class="col-six plan-wrap">-->
+<!--                        <div class="plan-block primary" data-aos="fade-up">-->
+
+<!--                            <div class="plan-top-part">-->
+<!--                                <h3 class="plan-block-title">Pro Plan</h3>-->
+<!--                                <p class="plan-block-price"><sup>$</sup>50</p>-->
+<!--                                <p class="plan-block-per">Per Month</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="plan-bottom-part">-->
+<!--                                <ul class="plan-block-features">-->
+<!--                                    <li><span>5GB</span> Storage</li>-->
+<!--                                    <li><span>20GB</span> Bandwidth</li>	                  -->
+<!--                                    <li><span>15</span> Databases</li>		                  -->
+<!--                                    <li><span>70</span> Email Accounts</li>-->
+<!--                                </ul>-->
+
+<!--                                <a class="button button-primary large" href="">Get Started</a>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div> &lt;!&ndash; end plan-wrap &ndash;&gt;-->
+
+<!--                </div>               -->
+<!--            </div> &lt;!&ndash; end pricing-table &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end pricing-content &ndash;&gt;-->
+<!--    </section> &#45;&#45; end pricing &ndash;&gt;-->
+
+
+    <!-- Testimonials Section
+    ================================================== -->
+<!--    <section id="testimonials">-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-twelve">-->
+<!--                <h1 class="intro-header" data-aos="fade-up">What They Say About Our App.</h1>-->
+<!--            </div>   		-->
+<!--        </div>   	-->
+
+<!--        <div class="row owl-wrap">-->
+
+<!--            <div id="testimonial-slider"  data-aos="fade-up">-->
+
+<!--                <div class="slides owl-carousel">-->
+
+<!--                    <div>-->
+<!--                        <p>-->
+<!--                        Your work is going to fill a large part of your life, and the only way to be truly satisfied is-->
+<!--                        to do what you believe is great work. And the only way to do great work is to love what you do.-->
+<!--                        If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.-->
+<!--                        </p> -->
+
+<!--                        <div class="testimonial-author">-->
+<!--                                <img src="images/avatars/user-02.jpg" alt="Author image">-->
+<!--                                <div class="author-info">-->
+<!--                                    Steve Jobs-->
+<!--                                    <span class="position">CEO, Apple.</span>-->
+<!--                                </div>-->
+<!--                        </div>                 -->
+<!--                    </div> -->
+
+<!--                    <div>-->
+<!--                        <p>-->
+<!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem-->
+<!--                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.    -->
+<!--                        </p>-->
+
+<!--                        <div class="testimonial-author">-->
+<!--                                <img src="images/avatars/user-03.jpg" alt="Author image">-->
+<!--                                <div class="author-info">-->
+<!--                                    John Doe-->
+<!--                                    <span>CEO, ABC Corp.</span>-->
+<!--                                </div>-->
+<!--                        </div>                                         -->
+<!--                    </div> -->
+
+<!--                </div> &lt;!&ndash; end slides &ndash;&gt;-->
+
+<!--            </div> &lt;!&ndash; end testimonial-slider &ndash;&gt;         -->
+<!--            -->
+<!--        </div> &lt;!&ndash; end flex-container &ndash;&gt;-->
+
+<!--    </section> &lt;!&ndash; end testimonials &ndash;&gt;-->
+<!--    -->
+
+    <!-- download
+    ================================================== -->
+    <section id="download">
+
+        <div class="row">
+            <div class="col-full">
+                <h1 class="intro-header"  data-aos="fade-up">Get Started Now!</h1>
+
+                <p class="lead" data-aos="fade-up">
+                    Run in Google Colab, <br>or download the environment and compile the source code.
+                </p>
+
+                <ul class="download-badges">
+                    <li><a href="https://colab.research.google.com/drive/1FrMTRsbSkZGAeN-Mh4PqWMI-SrDM3J7w?usp=share_link" title="" class="badge-googlecolab"  data-aos="fade-up">Goggle Colab</a></li>
+                    <li><a href="https://github.com/DaRL-LibSignal/LibSignal" title="" class="badge-github" data-aos="fade-up">Source Code</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section> <!-- end download -->    
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="footer-main">
+            <div class="row">
+
+                <div class="col-four md-1-2 tab-full footer-info">
+
+                    <div class="footer-logo"></div>
+
+                    <p>
+                        This project is developed and maintained by DaRL Lab from <a href="https://informatics.njit.edu/" target="_blank">the Department of Informatics</a> in Ying Wu College of Computing,
+                        <a href="https://www.njit.edu/" target="_blank">New Jersey Institute of Technology (NJIT).</a>
+                    </p>
+
+<!--                    <ul class="footer-social-list">-->
+<!--                        <li>-->
+<!--                            <a href="#"><i class="fa fa-facebook-square"></i></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#"><i class="fa fa-behance"></i></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#"><i class="fa fa-dribbble"></i></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#"><i class="fa fa-instagram"></i></a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+
+
+                </div> <!-- end footer-info -->
+
+                <div class="col-four md-1-4 tab-full mob-full footer-contact">
+                    <h4>Contributors</h4>
+
+                    <p>
+                        <a href="https://web.njit.edu/~hw32/" target="_blank"> Hua Wei</a>, Assistant Professor @ NJIT<br>
+                        Hao Mei, Ph.D Student @ NJIT<br>
+                        Xiaoliang Lei, M.S. Student @ NJIT<br>
+                        Longchao Da, Ph.D Student @ XJTU<br>
+                    </p>
+
+
+                </div> <!-- end footer-contact -->
+
+<!--                <div class="col-two md-1-2 tab-1-2 mob-full footer-site-links">-->
+
+<!--                    <h4>Site Links</h4>-->
+
+<!--                    <ul class="list-links">-->
+<!--                        <li><a href="#">Home</a></li>-->
+<!--                        <li><a href="https://www.njit.edu/" target="_blank">NJIT</a></li>-->
+<!--                        <li><a href="https://informatics.njit.edu/" target="_blank">Informatics@NJIT</a></li>-->
+<!--                        <li><a href="https://github.com/DaRL-LibSignal/LibSignal/issues">FAQ</a></li>-->
+<!--                    </ul>-->
+
+<!--                </div> &lt;!&ndash; end footer-site-links &ndash;&gt;-->
+
+                <div class="col-four md-1-2 tab-full footer-subscribe">
+
+                    <h4>Call for Participation</h4>
+
+                    <p>We are actively maintaining this project and welcoming any possible contributions. Please raise issues or pull requests on GitHub or email us if you would like to contribute or request an update.</p>>
+                </div> <!-- end footer-subscribe -->
+
+            </div> <!-- /row -->
+        </div> <!-- end footer-main -->
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright LibSignal 2022.</span>
+		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- end footer-bottom -->     	
+
+      </div>
+
+    </footer>
+
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>  
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
