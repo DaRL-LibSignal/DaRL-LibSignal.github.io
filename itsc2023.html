@@ -2,7 +2,7 @@
 <!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
 <!--<![endif]-->
 
 <head>
@@ -66,7 +66,7 @@
 
    <!-- home
    ================================================== -->
-   <section id="home" data-parallax="scroll" data-image-src="images/car-trail.png" data-natural-width=3000 data-natural-height=2000>
+   <section id="home" data-parallax="scroll" data-image-src="images/ITSC2023.png" data-natural-width=3000 data-natural-height=2000>
 
         <div class="overlay"></div>
         <div class="home-content">        
@@ -74,13 +74,13 @@
             <div class="row contents">                     
                 <div class="home-content-left">
 
-                    <h3 data-aos="fade-up">Welcome to</h3>
+                    <h3 data-aos="fade-up">24-28 September 2023 <br> Bilbao, Bizkaia, Spain</h3>
 
                     <h1 data-aos="fade-up">
-                        LibSignal
+                        Cross-simulator Datasets and Evaluations for Traffic Control Policies
                     </h1>
                     <h3 data-aos="fade-up">
-                        An Open Environment For <br>Traffic Signal Control.
+                        26th IEEE International Conference on Intelligent Transportation Systems <br>(ITSC 2023)
                     </h3>
 
                     <div class="buttons" data-aos="fade-up">
@@ -138,157 +138,179 @@
         <div class="row about-intro">
 
             <div class="col-four">
-                <h1 class="intro-header" data-aos="fade-up">About LibSignal</h1>
+                <h1 class="intro-header" data-aos="fade-up">Aim of the Tutorial</h1>
             </div>
             <div class="col-eight">
                 <p class="lead" data-aos="fade-up">
-                    LibSignal is a library for cross-simulator comparison of reinforcement learning models in traffic signal control tasks. This library is developed to implement recent state-of-the-art reinforcement learning models with extensible interfaces and unified cross-simulator evaluation metrics.
+                    Traffic control policies are essential for managing traffic flow on roadways and highways. By implementing traffic signal control and dynamic pricing, cities can reduce congestion, increase safety, reduce environmental impact, better use resources, and improve the quality of life for residents. With traffic control policies commonly tested and evaluated using simulations since simulations provide a safe and controlled environment. however, existing traffic simulators are limited by their shortage in input data and possible inconsistency between different simulators, which prevents them from generating interactive data from traffic simulation in the scenarios of real road networks. Different simulations are designed with different assumptions or objectives, which can lead to bias and inconsistency in the results.
 
                 </p>
 
-            </div>
-
-            <div class="row about-bottom-image">
-
-                <img src="images/overview.9d26362.png"
-                     srcset="images/overview.9d26362.png"
-                     sizes="(max-width: 2800px) 100vw, 2800px"
-                     alt="App Screenshots" data-aos="fade-up">
+                <p class="lead" data-aos="fade-up">
+                    To solve this issue, this tutorial will provide the hands-on usage on CBLab and LibSignal, to compare different control policies across different simulation environments with different datasets. Our libraries have the following features, which make them a high-quality benchmark for cross-simulator comparison: (1) Unified: our library builds a systematic pipeline to implement, use and evaluate traffic signal control models in a unified platform. The data configuration, model instantiation, and standardized evaluation procedure are shared across simulators.  (2) Comprehensive: we provide over ten models covering two widely-used traffic simulators reproduced to form a comprehensive model warehouse and multiple datasets commonly used from different resources. </p>
 
             </div>
+
+<!--            <div class="row about-bottom-image">-->
+
+<!--                <img src="images/overview.9d26362.png"-->
+<!--                     srcset="images/overview.9d26362.png"-->
+<!--                     sizes="(max-width: 2800px) 100vw, 2800px"-->
+<!--                     alt="App Screenshots" data-aos="fade-up">-->
+
+<!--            </div>-->
             
         </div>
 
 
-        <div class="row about-how" id="features">
+<!--        <div class="row about-how" id="features">-->
 
-            <h1 class="intro-header" data-aos="fade-up">Features</h1>
-        </div>
+<!--            <h1 class="intro-header" data-aos="fade-up">Features</h1>-->
+<!--        </div>-->
 
-        <div class="row about-features">
+<!--        <div class="row about-features">-->
 
-            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+<!--            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">-->
 
-                <div class="bgrid feature" data-aos="fade-up">	
+<!--                <div class="bgrid feature" data-aos="fade-up">	-->
 
-                    <span class="icon"><i class="icon-window"></i></span>            
+<!--                    <span class="icon"><i class="icon-window"></i></span>            -->
 
-                    <div class="service-content">	
+<!--                    <div class="service-content">	-->
 
-                        <h3>Cross simulator</h3>
+<!--                        <h3>Cross simulator</h3>-->
 
-                        <p>
-                            LibSignal provides transformations across different simulators, including SUMO, CityFlow and CBEngine, enabling comparisons between different algorithms originally conducted in different simulators.
-                        </p>
-                        
-                    </div> 	         	 
+<!--                        <p>-->
+<!--                            LibSignal provides transformations across different simulators, including SUMO, CityFlow and CBEngine, enabling comparisons between different algorithms originally conducted in different simulators.-->
+<!--                        </p>-->
+<!--                        -->
+<!--                    </div> 	         	 -->
 
-                    </div> <!-- /bgrid -->
+<!--                    </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
 
-                    <div class="bgrid feature" data-aos="fade-up">	
+<!--                    <div class="bgrid feature" data-aos="fade-up">	-->
 
-                        <span class="icon"><i class="icon-image"></i></span>                          
+<!--                        <span class="icon"><i class="icon-image"></i></span>                          -->
 
-                    <div class="service-content">	
-                        <h3>Unified Interface</h3>
+<!--                    <div class="service-content">	-->
+<!--                        <h3>Unified Interface</h3>-->
 
-                        <p>LibSignal provides unified interfaces to process and retrieve common information from different simulators for state, reward and evaluation metrics.
-                        </p>
+<!--                        <p>LibSignal provides unified interfaces to process and retrieve common information from different simulators for state, reward and evaluation metrics.-->
+<!--                        </p>-->
 
-                        
-                    </div>	                          
+<!--                        -->
+<!--                    </div>	                          -->
 
-                </div> <!-- /bgrid -->
-                <div class="bgrid feature" data-aos="fade-up">
+<!--                </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
+<!--                <div class="bgrid feature" data-aos="fade-up">-->
 
-                    <span class="icon"><i class="icon-paint-brush"></i></span>
+<!--                    <span class="icon"><i class="icon-paint-brush"></i></span>-->
 
-                    <div class="service-content">
-                        <h3>Comprehensive Models</h3>
+<!--                    <div class="service-content">-->
+<!--                        <h3>Comprehensive Models</h3>-->
 
-                        <p>LibSignal implements three baseline controllers and seven RL-based controllers to form a comprehensive model warehouse. Meanwhile, LibSignal collects 9 commonly used datasets.</p>
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-sliders"></i></span>
-
-                    <div class="service-content">
-                        <h3>Easy To Customize</h3>
-
-                        <p>LibSignal enables a modular design of different components, allowing users to flexibly insert customized components into the library. </p>
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                    <div class="bgrid feature" data-aos="fade-up">
-
-                        <span class="icon"><i class="icon-file"></i></span>	              
-
-                    <div class="service-content">
-                        <h3>Up-to-date Literature</h3>
-
-                        <p>LigSignal maintains RL-based traffic signal control papers published in the recent years
-                            on top conferences and journals and their workshop papers. We will continue to update the collection.</p>
-                        
-                    </div>                
-
-                    </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-gift"></i></span>	   	           
-
-                    <div class="service-content">
-                        <h3>Extensible</h3>
-
-                        <p>LibSignal has an OpenAI Gym interface which allows easy deployment of standard RL algorithms and supports existing RL frameworks and different simulators. </p>
-                            
-                    </div>	               
-
-                </div> <!-- /bgrid -->
-
-            </div> <!-- end features-list -->
-
-        </div> <!-- end about-features -->
-
-<!--        <div class="row about-how">-->
-<!--          -->
-<!--            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>           -->
-
-<!--            <div class="about-how-content" data-aos="fade-up">-->
-<!--                <div class="about-how-steps block-1-2 block-tab-full group">-->
-
-<!--                    <div class="bgrid step" data-item="1">-->
-<!--                        <h3>Sign-Up</h3>-->
-<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
-<!--                        </p> -->
+<!--                        <p>LibSignal implements three baseline controllers and seven RL-based controllers to form a comprehensive model warehouse. Meanwhile, LibSignal collects 9 commonly used datasets.</p>-->
 <!--                    </div>-->
 
-<!--                    <div class="bgrid step" data-item="2">-->
-<!--                        <h3>Upload</h3>-->
-<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
-<!--                        </p> -->
-<!--                    </div>               -->
-<!--               -->
-<!--                    <div class="bgrid step" data-item="3">-->
-<!--                        <h3>Create</h3>-->
-<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
-<!--                        </p> -->
+<!--                </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
+
+<!--                <div class="bgrid feature" data-aos="fade-up">-->
+
+<!--                    <span class="icon"><i class="icon-sliders"></i></span>-->
+
+<!--                    <div class="service-content">-->
+<!--                        <h3>Easy To Customize</h3>-->
+
+<!--                        <p>LibSignal enables a modular design of different components, allowing users to flexibly insert customized components into the library. </p>-->
 <!--                    </div>-->
 
-<!--                    <div class="bgrid step" data-item="4">-->
-<!--                        <h3>Publish</h3>-->
-<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
-<!--                        </p> -->
-<!--                    </div>  -->
+<!--                </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
 
-<!--                </div>           -->
-<!--           </div> &lt;!&ndash; end about-how-content &ndash;&gt;-->
+<!--                    <div class="bgrid feature" data-aos="fade-up">-->
 
-<!--        </div> &lt;!&ndash; end about-how &ndash;&gt;-->
+<!--                        <span class="icon"><i class="icon-file"></i></span>	              -->
+
+<!--                    <div class="service-content">-->
+<!--                        <h3>Up-to-date Literature</h3>-->
+
+<!--                        <p>LigSignal maintains RL-based traffic signal control papers published in the recent years-->
+<!--                            on top conferences and journals and their workshop papers. We will continue to update the collection.</p>-->
+<!--                        -->
+<!--                    </div>                -->
+
+<!--                    </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
+
+<!--                <div class="bgrid feature" data-aos="fade-up">-->
+
+<!--                    <span class="icon"><i class="icon-gift"></i></span>	   	           -->
+
+<!--                    <div class="service-content">-->
+<!--                        <h3>Extensible</h3>-->
+
+<!--                        <p>LibSignal has an OpenAI Gym interface which allows easy deployment of standard RL algorithms and supports existing RL frameworks and different simulators. </p>-->
+<!--                            -->
+<!--                    </div>	               -->
+
+<!--                </div> &lt;!&ndash; /bgrid &ndash;&gt;-->
+
+<!--            </div> &lt;!&ndash; end features-list &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end about-features &ndash;&gt;-->
+
+        <div class="row about-how">
+
+            <h1 class="intro-header" data-aos="fade-up">Tentative Agenda</h1>
+
+            <div class="about-how-content" data-aos="fade-up">
+                <div class="about-how-steps block-1-2 block-tab-full group">
+
+                    <div class="bgrid step" data-item="15min">
+                        <h3>09:00-09:15 am: Welcome, opening remarks</h3>
+                        <p>Data, simulation, and methods in traffic control policies
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="45min">
+                        <h3>9:15 - 10:00 am: Hands-on Simulation with CBLab</h3>
+                        <p>Introduction to existing datasets and scenarios
+                        </p>
+                        <p>Creating road networks from OpenStreetMap, Custom Templates and existing datasets</p>
+                        <p>Running experiments on CBLab
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="30min">
+                        <h3>10:00-10:30 am: Coffee break</h3>
+<!--                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.-->
+<!--                        </p>-->
+                    </div>
+
+                    <div class="bgrid step" data-item="40min">
+                        <h3>10:30-11:15 am: RL for traffic signal control</h3>
+                        <p>Introduction of the principles of RL </p>
+                        <p>Frequently used RL methods</p>
+                        <p>Deep RL and formulating traffic control problem as a reinforcement learning problem
+                        </p>
+                    </div>
+
+                    <div class="bgrid step" data-item="90min">
+                        <h3>11:15-12:00 pm Hands-on Implementation for Traffic Signal Control</h3>
+                        <p>Design of reward, state, action </p>
+                        <p>Different models in RL (e.g., Policy-based, value-based) and their pros and cons will be discussed</p>
+                        <p>Step-by-step instructions on setting up the Python environment with LibSignal
+                        </p>
+                    </div>
+
+
+                    <div class="bgrid step" data-item="30min">
+                        <h3>12:00-12:30 pm Open problems in RL for traffic control</h3>
+                        <p>Simulating environment to real world, benchmarks, interpretability, safety issues, etc.
+                        </p>
+                    </div>
+                </div>
+           </div> <!-- end about-how-content -->
+
+        </div> <!-- end about-how -->
 
 <!--        <div class="row about-bottom-image">-->
 
@@ -306,23 +328,22 @@
     </section> <!-- end about -->  
    
 
-<!--    &lt;!&ndash; pricing-->
-<!--    ================================================== &ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; pricing&ndash;&gt;-->
+<!--&lt;!&ndash;    ================================================== &ndash;&gt;&ndash;&gt;-->
 <!--    <section id="pricing">-->
 <!--        <div class="row pricing-content">-->
 
 <!--            <div class="col-four pricing-intro">-->
-<!--                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>-->
+<!--                <h1 class="intro-header" data-aos="fade-up">Tentative Agenda</h1>-->
 
-<!--                <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. -->
-<!--                </p>-->
+<!--                <p data-aos="fade-up">This tutorial is to provide both lecture and hands-on experience for using the toolkits for cross-simulator traffic control with enriched datasets. We will review the existing techniques in traffic control literature, introduce the key techniques like reinforcement learning, analysis their pros and cons and compare their experimental settings. As most of the literature on traffic control is originally implemented under different simulators or conducted under different datasets, this tutorial provides the usage of two tools, CBLab and LibSignal, to provide a fair comparison between the published literature and potentially act as a reference for future works.</p>-->
 <!--            </div>-->
 
 <!--            <div class="col-eight pricing-table">-->
 <!--                <div class="row">-->
 
 <!--                    <div class="col-six plan-wrap">-->
-<!--                        <div class="plan-block" data-aos="fade-up"> -->
+<!--                        <div class="plan-block" data-aos="fade-up">-->
 
 <!--                            <div class="plan-top-part">-->
 <!--                                <h3 class="plan-block-title">Lite Plan</h3>-->
@@ -333,14 +354,14 @@
 <!--                            <div class="plan-bottom-part">-->
 <!--                                <ul class="plan-block-features">-->
 <!--                                    <li><span>3GB</span> Storage</li>-->
-<!--                                    <li><span>10GB</span> Bandwidth</li>	                  -->
-<!--                                    <li><span>5</span> Databases</li>		                  -->
+<!--                                    <li><span>10GB</span> Bandwidth</li>-->
+<!--                                    <li><span>5</span> Databases</li>-->
 <!--                                    <li><span>30</span> Email Accounts</li>-->
 <!--                                </ul>-->
 
 <!--                                <a class="button button-primary large" href="">Get Started</a>-->
-<!--                            </div>  -->
-<!--                     -->
+<!--                            </div>-->
+
 <!--                        </div>-->
 <!--                    </div> &lt;!&ndash; end plan-wrap &ndash;&gt;-->
 
@@ -356,8 +377,8 @@
 <!--                            <div class="plan-bottom-part">-->
 <!--                                <ul class="plan-block-features">-->
 <!--                                    <li><span>5GB</span> Storage</li>-->
-<!--                                    <li><span>20GB</span> Bandwidth</li>	                  -->
-<!--                                    <li><span>15</span> Databases</li>		                  -->
+<!--                                    <li><span>20GB</span> Bandwidth</li>-->
+<!--                                    <li><span>15</span> Databases</li>-->
 <!--                                    <li><span>70</span> Email Accounts</li>-->
 <!--                                </ul>-->
 
@@ -367,7 +388,7 @@
 <!--                        </div>-->
 <!--                    </div> &lt;!&ndash; end plan-wrap &ndash;&gt;-->
 
-<!--                </div>               -->
+<!--                </div>-->
 <!--            </div> &lt;!&ndash; end pricing-table &ndash;&gt;-->
 
 <!--        </div> &lt;!&ndash; end pricing-content &ndash;&gt;-->
@@ -433,25 +454,25 @@
 
     <!-- download
     ================================================== -->
-    <section id="download">
+<!--    <section id="download">-->
 
-        <div class="row">
-            <div class="col-full">
-                <h1 class="intro-header"  data-aos="fade-up">Get Started Now!</h1>
+<!--        <div class="row">-->
+<!--            <div class="col-full">-->
+<!--                <h1 class="intro-header"  data-aos="fade-up">Get Started Now!</h1>-->
 
-                <p class="lead" data-aos="fade-up">
-                    Run in Google Colab, <br>or download the environment and compile the source code.
-                </p>
+<!--                <p class="lead" data-aos="fade-up">-->
+<!--                    Run in Google Colab, <br>or download the environment and compile the source code.-->
+<!--                </p>-->
 
-                <ul class="download-badges">
-                    <li><a href="https://colab.research.google.com/drive/1FrMTRsbSkZGAeN-Mh4PqWMI-SrDM3J7w?usp=share_link" title="" class="badge-googlecolab"  data-aos="fade-up">Goggle Colab</a></li>
-                    <li><a href="https://github.com/DaRL-LibSignal/LibSignal" title="" class="badge-github" data-aos="fade-up">Source Code</a></li>
-                </ul>
+<!--                <ul class="download-badges">-->
+<!--                    <li><a href="https://colab.research.google.com/drive/1FrMTRsbSkZGAeN-Mh4PqWMI-SrDM3J7w?usp=share_link" title="" class="badge-googlecolab"  data-aos="fade-up">Goggle Colab</a></li>-->
+<!--                    <li><a href="https://github.com/DaRL-LibSignal/LibSignal" title="" class="badge-github" data-aos="fade-up">Source Code</a></li>-->
+<!--                </ul>-->
 
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
 
-    </section> <!-- end download -->    
+<!--    </section> &lt;!&ndash; end download &ndash;&gt;    -->
 
 
     <!-- footer
